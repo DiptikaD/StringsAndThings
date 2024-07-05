@@ -10,6 +10,8 @@ import org.junit.Test;
  */
 public class GIsHappyTest {
 
+
+
     private StringsAndThings stringsAndThings;
 
     @Before
@@ -30,10 +32,13 @@ public class GIsHappyTest {
         Assert.assertFalse(actual);
     }
 
+    // third test is incorrect, need to fix
+
     @Test
     public void gIsHappyTest3(){
         Boolean actual = stringsAndThings.gIsHappy("xxggyygxx");
-        Assert.assertTrue(actual);
+       // Assert.assertTrue(actual);
+    Assert.assertFalse(actual);
     }
 
 }
